@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cv">
+        <!-- todo 規劃cv-header 
+       
+       1. 名字
+       2. email 
+       
+       -->
+
+        <header class="cv-header">
+            <h1>YI-PEI HUANG</h1>
+            <p>104306022@nccu.edu.tw</p>
+        </header>
+        <!-- .cv-header>h1{Name}>p{email} -->
+
+        <!-- todo 規劃cv-body 
+       
+       1. intro 簡介區
+       2. experience 經歷區 放入職稱,簡介與公司logo
+       
+       -->
+
+        <!-- todo 規劃cv-footer
+        
+        1. 放入外部社群連結
+        
+        -->
+        <!-- section.cv-body>intro+.experiences -->
+        <section class="cv-body">
+            <div class="intro">
+                <h2 class="section-title">intro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eaque, sunt veritatis. Aperiam et ea inventore, fugiat quasi deserunt nulla.</p>
+            </div>
+            <div class="experiences">
+                <h2 class="section-title">experiences</h2>
+                <!-- (.experience>h3{job title}+img+p>lorem25)*3 -->
+                <div class="experience">
+                    <h3>job title</h3>
+                    <img src="img/experience-company-logo1.svg" alt="logo1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quae laboriosam magnam dolores autem dolorum eum repudiandae! Asperiores amet sunt eaque sequi iure, voluptatum ducimus!</p>
+                </div>
+                <div class="experience">
+                    <h3>job title</h3>
+                    <img src="img/experience-company-logo2.svg" alt="logo2">
+                    <p>Sit odit dolores facilis ad, modi assumenda sequi libero, nesciunt totam dolore aspernatur ea ratione! Impedit eveniet nihil quaerat velit voluptates quis adipisci sequi illo.</p>
+                </div>
+                <div class="experience" id="lastExperience">
+                    <h3>job title</h3>
+                    <img src="img/experience-company-logo3.svg" alt="logo3">
+                    <p>Delectus doloremque, vitae quaerat odio dignissimos, placeat quae molestiae rerum, quod, ab repudiandae! Odio ex beatae facilis dicta ipsa, velit numquam odit similique molestias dolores.</p>
+                </div>
+                <!-- .experience的last-child -->
+            </div>
+            <!-- class的名字分割用"-",id用"camelcase" -->
+        </section>
+
+        <footer class="cv-footer">
+            <div class="social-links">
+                <a href="#" class="social-link" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i>
+</a>
+                <!-- 在超連結的網址欄位放入"#"，則測試時，不會一直跳轉 -->
+                <a href="" class="social-link" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i>
+</a>
+                <a href="" class="social-link" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>
+</a>
+
+
+            </div>
+
+
+        </footer>
+</body>
+
+</html>

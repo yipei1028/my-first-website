@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*border: 1px solid black;*/
+    /*tips:加入border，可以看見每個物件的邊界，方便調整大小，最後再刪除*/
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cv {
+    width: 700px;
+    margin: 100px auto;
+    background: white;
+    z-index: 5;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+}
+
+.cv-header {
+    background: #fff;
+    /*可以用"#fff"來代替"#ffffff"*/
+}
+
+.cv-header>h1,
+.section-title {
+    text-transform: uppercase;
+}
+
+.cv-footer {
+    background: #6899cb;
+}
+
+.cv-header,
+.cv-body,
+.cv-footer {
+    padding: 40px 50px;
+}
+
+.experience {
+    position: relative;
+    padding-top: 30px 0;
+    border-bottom: dashed 1px #333;
+    /*加入下底線*/
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+.experience>img {
+    width: 100px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.social-link {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    /*a本身為行內元素，不會換行，但會擠在一起*/
+    /*block為區塊元素，所以會自動換行*/
+    /*所以在這裡我們選擇inline-block*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*圓角，屬於一種新屬性，因此要打三次，配合各種瀏覽器*/
+    line-height: 40px;
+    text-align: center;
+    font-size: 35px;
+    /*因為fontawesome把icon做成文字，因此可以透過字型調整icon大小*/
+    border: 1px dashed #eee;
+}
+
+.social-link:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+
+/*hover:滑鼠移過去，顏色會稍微變淡*/
+
+.social-link:active {
+    background: rgba(0, 0, 0, .8);
+}
+
+
+/*active:左鍵點下去後，會變不透明*/
+
+
+/* 主色(primary) #29323b */
+
+html {
+    position: relative;
+    /*讓html作為一個參照的對象*/
+    background: #6899cb;
+}
+
+html:after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    display: block;
+    background: #E2C0B9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    /*可以排列物件之間的順序*/
+}
+
+
+/*after:虛擬的為元素*/
+
+
+/* 強調色(accent) #E2C0B9 */
+
+
+/* 字體顏色 #333 */

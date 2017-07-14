@@ -1,0 +1,51 @@
+.box {
+    width: 100%;
+    /*"w/h+數字+%+tab"*/
+    height: 100vh;
+    /*將高度設定為滿版："100vh" != "100%"*/
+    background-color: orange;
+    /*"bgc+tab"*/
+    /*開啟預覽，會發現瀏覽器預設留白了8px的白邊*/
+    /*flex的垂直置中設定方法一：*/
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*完成flex的垂直置中*/
+    /*text-align: center;*/
+    /*文字水平置中*/
+    /*flex的垂直置中設定方法二：*/
+    display: table;
+    /*去"css background gradient generator"(css背景漸層產生器)網站上抓的code*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b8e1fc+0,a9d2f3+10,90bae4+25,90bcea+37,90bff0+50,6ba8e5+51,a2daf5+83,bdf3fd+100;Blue+Gloss+%231 */
+    background: #b8e1fc;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd', GradientType=0);
+    /* IE6-9 */
+    background-image: url('../image/image2.jpg');
+    /*background-image:url('相對路徑/絕對路徑')=="bgi+tab"*/
+    background-repeat: no-repeat;
+    /*為了避免背景圖重複出現問題，加入"bgr+tab"，圖片指出現一次不重複*/
+    background-size: cover;
+    /*透過background，讓圖片配合使用者打開瀏覽器的大小"bgs+tab"，但有可能因此要犧牲掉一些高度*/
+    background-attachment: fixed;
+    /*background-attachment讓box變成一個像窗戶的東西，如果沒有的話背景圖則像一幅畫掛在那裡*/
+    margin-bottom: 500px;
+    box-shadow: 0 20px 40px -10 rgba(0, 0, 0, .5), 0 5px 8px rgba(0, 0, 0, .5);
+    /*圖片的陰影 x軸的偏移 y軸的偏移 模糊值 向外擴張/向內縮減的值*/
+    /*box-shadow可以加很多組*/
+}
+
+.box-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/*方法二：透過table垂直置中，較舊，現在很少用table排版*/

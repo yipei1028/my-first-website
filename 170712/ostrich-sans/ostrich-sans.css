@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'ostrich sans';
+    /*自己創造一個字型，並且給他一個名稱*/
+    src: url('ostrich-sans-regular.eot');
+    /* IE9 兼容模式 */
+    src: /*local('LindenHill'), 指定使用者電腦裡的字體名稱 */
+    url('ostrich-sans-regular.eot#iefix') format('embedded-opentype'), /* IE6 - IE8 */
+    url('ostrich-sans-regular.woff') format('woff'), /* 現代瀏覽器 */
+    url('ostrich-sans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('ostrich-sans-regular.svg#LindenHill') format('svg');
+    /* iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*"cmd+B"可一次修改很多一樣的東西*/

@@ -1,0 +1,25 @@
+table {
+    border: 1px solid black;
+}
+
+
+/*我是註解齁齁齁*/
+
+
+/*border：邊線粗度 邊線樣式 邊線顏色*/
+
+td {
+    border: 1px solid black;
+}
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/*讓中間的框線結合在一起*/
+
+
+/*table和td可以結合在一起寫*/

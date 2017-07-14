@@ -1,0 +1,103 @@
+    @import url('https://fonts.googleapis.com/css?family=Fresca');
+    * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        /*"webkit"與"moz"是為了配合一些比較舊的瀏覽器而設定的*/
+        -moz-box-sizing: border-box;
+        /*以框線作為標準(border不會向外長)*/
+    }
+    
+    .title {
+        color: yellow;
+        font-size: 20px;
+        /*"fz+數字+tab"*/
+    }
+    
+    .title {
+        color: red;
+        font-size: 32px;
+    }
+    /*因為瀏覽器是由上往下讀，因此最後呈現的會是最後一個*/
+    /*其實瀏覽器有先把字變成黃色，只是太快了！快到我們看不到*/
+    
+    * {
+        color: gray;
+        font-family: "Helvetica";
+    }
+    /*"*"代表選擇所有的*/
+    
+    h1,
+    h2,
+    h3,
+    .title {
+        font-family: 'ostrich sans';
+        color: blue;
+    }
+    /*不建議使用"*"，因為i(icon)也會被*設定*/
+    
+    h1 {
+        background: yellow;
+        color: rgba(255, 0, 0, 0.5);
+        /*RGBA的A表示透明度，範圍由0-1(最不透明)*/
+        letter-spacing: 5px;
+        /*字母與字母間的間距*/
+        text-align: center;
+        /*置中、靠左、靠右對齊*/
+        text-shadow: 0 3px 0 rgba(255, 255, 255, 1);
+        /*文字的陰影(左右偏移值，陰影的距離，模糊程度，陰影顏色)*/
+        /*將陰影的顏色改為白色，即為光暈*/
+    }
+    
+    .btn {
+        text-decoration: none;
+        /*去除超連結底下原本的底線*/
+        background: #8bd89d;
+        text-align: center;
+        line-height: 50px;
+        /*如果把文字的行高，設定成跟方匡的高度一樣，即會置中*/
+        color: white;
+        width: 120px;
+        height: 50px;
+        display: inline-block;
+        /*超連結屬於行內元素，因此沒有高度與寬度*/
+    }
+    
+    .btn:hover {
+        /*hover為一虛擬類別，游標移過去時會改變顏色或大小*/
+        background: orange;
+        width: 200px;
+        /*游標移過去時，會變大！*/
+        transition: all 1s ease;
+        /*transition為一個補間動畫，其後接三個值: 要套用的地方 秒數 timing-function*/
+    }
+    
+    .btn:active {
+        /*左鍵點擊後的顏色*/
+        background: #1e552b;
+    }
+    
+    h1:hover {
+        background: red;
+    }
+    
+    .item {
+        width: 200px;
+        /*w/h+數字+tab*/
+        height: 100px;
+        background: orange;
+        border: 3px solid #1221d4;
+        /*padding: 10px;*/
+        /*padding:上下左右都會留白*/
+        /*padding: 0 20px;*/
+        /*第一個值為上下的留白 第二個值為左右的留白*/
+        padding: 5px 10px 0px 20px;
+        /*四個值的留白順序為：上右下左(從上方開始順時針轉一圈)*/
+        /*加入border後，也要算入border的寬度，否則會跑版！因為border是向外長的*/
+        /*margin: 80px 40px;*/
+        /*第一個值為上下對外的留白，第二個值則為左右對外的留白*/
+        /*margin: 10px 0px 80px 120px;*/
+        /*四個值的打法與padding相同*/
+        /*padding是對內留白;margin則是對外(其他物件)留白*/
+        margin: 80px auto;
+        /*整格方框水平置中，第一個值為上下的距離，第二個值為左右的距離*/
+    }

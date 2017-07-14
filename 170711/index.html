@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 透過link連結html和css兩部分的檔案 -->
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2">001</td>
+            <!-- 合併儲存格：colspan="  "或是 rowspan=""-->
+            <!--<td>002</td>-->
+            <td>003</td>
+        </tr>
+        <tr>
+            <!-- <td>004</td> -->
+            <!-- <td>005</td> -->
+            <td>006</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>008</td>
+            <td>009</td>
+        </tr>
+    </table>
+    <!-- "table>(tr>td{內容}*3)"-->
+    <!-- 可以加入小括號輔助 HINT:國小數學XD -->
+    <!-- html的表格預設是沒有框線的 -->
+
+    <table>
+        <tr>
+            <td rowspan="2">監獄兔<br>困飯兩難</td>
+            <td colspan="2">基連列克</td>
+        </tr>
+        <tr>
+
+            <td>招</td>
+            <td>不招</td>
+        </tr>
+        <tr>
+            <td rowspan="3">普亭</td>
+
+            <td>都關十年</td>
+            <td>死刑，關20年</td>
+        </tr>
+        <tr>
+
+            <td>關20年，死刑</td>
+            <td>無罪釋放</td>
+        </tr>
+        <tr>
+
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2">
+                監獄兔<br> 困飯兩難
+            </td>
+
+            <td colspan="2">
+                基連列克
+            </td>
+        </tr>
+        <td>招</td>
+        <td>不招</td>
+        <tr>
+            <td rowspan="2">普亭</td>
+            <td>招</td>
+            <td>都關十年</td>
+            <td>死刑，關20年</td>
+        </tr>
+        <tr>
+            <td>不招</td>
+            <td>關20年，死刑</td>
+            <td>無罪釋放</td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+
+    <form action=" ">
+        <label for="">帳號</label>
+        <input type="text" placeholder="請輸入帳號..." required>
+        <!-- "required：必填寫欄位" -->
+        <br>
+        <label for="">password</label><input type="password" placeholder="請輸入8-12位密碼">
+        <br>
+        <label for="">只能填數字</label>
+        <input type="number">
+        <br>
+        <label for="">日期</label><input type="date">
+        <br> <label for="">email</label><input type="email">
+        <!-- 只有外在呈現樣子改變，仍然可以從網頁原始碼內修改，看到使用者輸入的密碼 -->
+        <!-- label{password}+input -->
+        <!-- "placeholder：提示字" -->
+        <br>
+        <label for="">選顏色</label><input type="color">
+        <br>
+        <label for="">上傳檔案</label><input type="file">
+        <br>
+        <h4>單選題</h4>
+        A<input name="radio1" value="a" type="radio">B
+        <input name="radio1" value="b" type="radio"> C
+        <input name="radio1" value="c" type="radio"> D
+        <input name="radio1" value="d" ype="radio">
+        <!-- 單選題的type是radio，畫面上會出現圓圈圈 -->
+        <!-- 加入相同的name後，電腦才知道她們四個選項是屬於同一題，才能消除 -->
+        <!-- 如果沒有寫value=""，則送出的值為空值，電腦才讀得到！ -->
+        <br>
+        <h4>複選題</h4>
+        <br> A
+        <input type="checkbox" name="checkbox1" value="a"> B
+        <input type="checkbox" name="checkbox1" value="b"> C
+        <input type="checkbox" name="checkbox1" value="c"> D
+        <input type="checkbox" name="checkbox1" value="d">
+        <!-- 單選題的type是checkbox，畫面上會出現打勾的方框框 -->
+        <br>
+        <input type="submit">
+    </form>
+
+
+
+
+</body>
+<!-- 要顯示的東西的都寫在body裡面 -->
+
+</html>

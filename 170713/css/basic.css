@@ -1,0 +1,18 @@
+/*每個專案都會使用到的基本設定，放在basic.css裡*/
+
+* {
+    -webkit-box-sizing: border-box;
+    /*for safari*/
+    -moz-box-sizing: border-box;
+    /*for firefox*/
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    /*將瀏覽器預設的白邊去除*/
+    /*m+數字+tab*/
+    padding: 0;
+    /*p+數字+tab*/
+}
